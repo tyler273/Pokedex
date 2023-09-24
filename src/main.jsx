@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx'
-import Error from "../pages/Error";
-import Landing from "../pages/Landing";
+import Error from "./pages/Error";
+import Home from "./pages/Home.jsx";
 import './index.css'
 
 const router = createBrowserRouter([
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Landing />
+        element: <Home />
       },
     ],
   },

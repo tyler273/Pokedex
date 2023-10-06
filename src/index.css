@@ -1,7 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Tilt+Warp&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-size: 16px;
   list-style: none;
   border: none;
+}
+
+:root {
+  --clr-bg-primary: rgb(251, 238, 206);
+  --clr-bg-secondary: powderblue;
+
+  --ff-main-title: "Tilt Warp", sans-serif;
+  --ff-body: "Arimo", sans-serif;
+
+  --fw-body-hdg: 700;
+  --fw-body-dts: 400;
+}
+
+/* ============== GENERAL STYLES ============ */
+
+body {
+  display: flex;
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* ============== HEADER ============ */
+
+header {
+  background: var(--clr-bg-secondary);
+}
+
+h1 {
+  font-family: var(--ff-main-title);
+  font-size: 2em;
+}
+
+nav p {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-body-hdg);
+}
+
+/* ============== MAIN CONTENT ============ */
+
+main {
+  display: flex;
+  width: 100%;
+  font-family: var(--ff-body);
+}
+
+/* ============== FOOTER ============ */
+
+footer {
+  background: var(--clr-bg-secondary);
+  font-family: var(--ff-body);
 }
